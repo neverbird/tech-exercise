@@ -3,7 +3,6 @@
 source: https://github.com/neverbird/tech-exercise.git
 team: neverbird
 release: ci-cd
-
 applications:
   # Tooling to support CI/CD
   - name: ubiquitous-journey
@@ -11,17 +10,15 @@ applications:
     source_path: "."
     helm_values:
       - ubiquitous-journey/values-tooling.yaml
-
   # Test app of app
   - name: test-app-of-pb
-    enabled: false
+    enabled: true
     source_path: "."
     helm_values:
       - pet-battle/test/values.yaml
-
   # Staging App of Apps
   - name: staging-app-of-pb
-    enabled: false
+    enabled: true
     source_path: "."
     helm_values:
       - pet-battle/stage/values.yaml
