@@ -29,7 +29,6 @@ applications:
         - name: neverbird-stage
           bindings: *binds
           operatorgroup: true
-
   # Jenkins
   - name: jenkins
     enabled: true
@@ -70,23 +69,25 @@ applications:
         - name: nexus-password
           username: admin
           password: admin123
+# Nexus
+  - name: nexus
+    enabled: true
+    source: https://redhat-cop.github.io/helm-charts
+    chart_name: sonatype-nexus
+    source_ref: 1.1.10
+    values:
+      includeRHRepositories: false
+      service:
+        name: nexus
 
-  # Nexus
+# Sealed Secrets
 
+# Tekton Pipelines
 
-  # Sealed Secrets
+# Sonarqube
 
+# Grafana
 
-  # Tekton Pipelines
+# Allure
 
-
-  # Sonarqube
-
-
-  # Grafana
-
-
-  # Allure
-
-
-  # Matomo
+# Matomo
