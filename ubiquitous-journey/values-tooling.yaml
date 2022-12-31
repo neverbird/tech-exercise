@@ -64,22 +64,23 @@ applications:
             value: "true"
           - name: JAVA_ARGS
             value: '-Dorg.jenkinsci.plugins.gitclient.GitClient.untrustedSSL=true'
+          - name: BISCUITS
+            value: jaffa-cakes
       persistence: false
       source_secrets:
         - name: nexus-password
           username: admin
           password: admin123
-# Nexus
+          # Nexus
   - name: nexus
     enabled: true
     source: https://redhat-cop.github.io/helm-charts
     chart_name: sonatype-nexus
-    source_ref: 1.1.10
+    source_ref: "1.1.10"
     values:
       includeRHRepositories: false
       service:
         name: nexus
-
 # Sealed Secrets
 
 # Tekton Pipelines
