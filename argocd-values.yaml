@@ -1,0 +1,15 @@
+ignoreHelmHooks: true
+operator: []
+namespaces:
+  - neverbird-ci-cd
+argocd_cr:
+  initialRepositories: |
+    - url: https://github.com/neverbird/tech-exercise.git
+      type: git
+      passwordSecret:
+        key: password
+        name: git-auth
+      usernameSecret:
+        key: username
+        name: git-auth
+      insecure: true
