@@ -83,7 +83,7 @@ applications:
         name: nexus
 # Sealed Secrets
   - name: sealed-secrets
-    enabled: true
+    enabled: false
     source: https://redhat-cop.github.io/helm-charts
     chart_name: helper-sealed-secrets
     source_ref: 1.0.3
