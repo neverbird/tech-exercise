@@ -73,7 +73,7 @@ applications:
           password: admin123
  # Nexus
   - name: nexus
-    enabled: false
+    enabled: true
     source: https://redhat-cop.github.io/helm-charts
     chart_name: sonatype-nexus
     source_ref: "1.1.10"
