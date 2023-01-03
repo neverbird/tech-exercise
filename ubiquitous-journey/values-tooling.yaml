@@ -71,7 +71,7 @@ applications:
         - name: nexus-password
           username: admin
           password: admin123
- # Nexus
+# Nexus
   - name: nexus
     enabled: true
     source: https://redhat-cop.github.io/helm-charts
@@ -83,7 +83,7 @@ applications:
         name: nexus
 # Sealed Secrets
   - name: sealed-secrets
-    enabled: false
+    enabled: true
     source: https://redhat-cop.github.io/helm-charts
     chart_name: helper-sealed-secrets
     source_ref: 1.0.3
@@ -97,12 +97,8 @@ applications:
           labels:
             credential.sync.jenkins.openshift.io: "true"
           data:
-            password: AgAqKiUCi41ImJFZSbZCqCoowu4hI9CLC/bdzNikyy9FL9ayUc62qDwPNRf6j/eEwzPCmCBlE35saAsRqAK0pmj87cYIb8pTEh4A9a0mACOPzDJ1afb8+FFfojwstgS4QAqe0FwMlvGD1h+tMreCQnw97ngSor0Womv+TniuqMt2X3fO7TRrSwuy8gKsRIisJNSLE59TqGOeWFMsdnZH+J3/J7S29XCXa8BJK6rct5d+xyxV0869ZZLOT7LoRftnqXzBpw4X0wzt+BHDHPJvxpfE4e8mCT+ildyvrjDKaMnAy61ss017q3VfVDzX6DfPbkMa/rxfMd3BGqtvHR5I3PUoz4cS09R8G74Hd9CEqaZ4bTFdxUlDX2qEgnoWt6qBjnSqFk2zENDGtrnP3UrGknz3Kte9Mrx3axuqiOzF+0Bfv4C8IxrNnKPYLxFHQnIfwZccAGLvs6KGeoU6J7BawQpmAECFE055LXrk8dSGT/TIMH9FfeDUFnlhYGNdwn5qbN5YaapSpq5n2BADJZ1BIXTJJNUYixE69pxMn2MC13nOgIw050PoqsVls46FAqaCzymKDV/YdeyATUpg7W1xZF23C+tZyEflAvz4oKJ8HC6Zs1YX+zSg4wU8oNZ6jU98csK2aDdxPGgUJsBJ3huWDOCiogYYxaHTjvZ0nl0C6Q6uk4lMcXy7yt904xkb9q3MTnSYPd2OFMUjso2RqQfG/tC64IxBFnE1NWurDDJyKvt8fqJuaKW37Obt
-            username: AgC0zLjfxsH+OA3bcp5An1vQm7b89/zVeTgCvDM3SpCPXmEBczyThI+BxWwd0dwalB9BgDvQscPFh/uozIG3t8Jx3iqojKfi4FsoKdzKEQMuyC6fK06xt4dwDrSb6vGrdaVnhoba9Xl0MXqtN8WgbDftJhIW3mbfPxRxg7C+5Qx46RTuhupAn0uGhc+wsAu8+yROg1F+uPMCysnCol3t4GkcH62vv3NsLJL1fpzfTFM5aHuIjMlamCif5dnj0Rwnw9Jk+G2FoMcKGsW2QWrODUvmaK1h0rCfXybmBFwNkegMdnvNp6hWlGvhvuFR78LSFe76idFKKPTVuwBHB/BaZkdQsWblur/f8kFX5onYZiDYurAOH36g+0/ppGQtrphZd7fLISF9nxPMomEVOoTPyszIO9T89JWdftCS31CJXfIqQx4TBcomps0SpNMMtXiOg+XYyHIOKhJEISeJS2H94iB3DT4Y9vbQ/tgoaRtrv6erU1DjG4r0VDXRyEezen3zJPdc3hKWlwQWgE5BT3uGSNsjKBXVk5KUP1GNxX0WXO3P3MYcK/kVZre+PnaEg6djd/3ixa2X2FxrKcO2U/uO0ye9C6LPlBPBzcp/UhdPjx3P8rNKtn+y44LL8Gyntm5wfMtjoJHvyMHj+lsX2xzepex4Eg7OI9AdSIg8nKHQV8OVHCqqgx94l5qKctP6eEZTVUw=
-# Tekton Pipelines
-
-# Sonarqube
-
+            username: AgBm+jbl92VmLnoPQ6wTcxyNKYJSsClpZS1jcXlSJiSIZASe8BXhyY4hqweMc+4GFZ50yBMIIvDQn+qxacWgGuZ5k3HRKyCoYf4zKJylDHdM9IzkAxqy9LflbzrWK4b2L+aGjrP0ViK6GwRfMhYBkguegLVxFecx0UUqkJAvQFqnGtDeT417Q2fvmXxepRmI/wqq/xcFT9TrXvRmGwaaGP2GwGL8IutgPozk3XPTc5CpcBtA9Zrez3sHPdlnunv9PeUYBfrwSE5VDqbMmw5CATME4UfZTOTpNATBYVli4h2DguJ2mpkAcWoXgcHFlu5W7nfqu1cUnnIxXAitlkRA6c8WyeXTlKwDjq5RsQfUghNzPivbJUECSWrlN8HgR2GoG4qPc7EioFhayKb9sTRM+PsCkNKdaUzkNWInSkvp5+ilwkvALtekXty7PJ5Gyr/Zvpg8u0M8ewZ/PAUeMhEIA5mtqiR2K4qdL9jvgEZkjPhnpHh6yAYiZ8Ak4U5J+7vNL9EKtWBMqTs8LBkNSa8mWjKmKVo2igATagUWczVWS3aply5J5F+mR71xmWLuT3mvBhu2IwcY/rR7ht5EdZQaH4r0y7XTndNgEhxkbHgqdDG5V2VMXMMZ3rs9F+P8eJPH/dXhjSVbwFO3QXe8mLXJWLx2Z2IKZ/r+zDktkrOE27l1wLr5hEjvGnqpdfKm6I9DKOY=
+            password: AgB5hI1bwvewf6hjimh4/741qcYwkfwZ7w79HIKSOOcY25fphqfLX2uotSovI0uZDFIp/fGIECDf/ZZY+clL1fiyin0VT6799nNPlEtyyeBd4pDc9JNaWfnw768umcIyDTBf2pXD//MCt4S3R9mDieNEVglAJ/WnuaHBDSq48ARwGXliZsd+9X+36n6F6KxeR6U5aSOy9d6XV0/NORjrqa4lSOL7qaShbn+rBSb6RRR6tOvTcp0+RbMxvwu3yK9IbFHjUKDMJudjcaSgpTlCVCksd29x8snrdkRCl4Hb2DX6pLXyLWYrFrDnaEe1MhXwUCMnmeSi5NCoS5Y6vBb/ydraPj8hK0YyP7cxJH9AodCVStRYqd2RK7oPRNcy0GhoCZnyjFq/r7MD7MXKFqfADAPElFzKg6+Hn1/CGeV+Fr4RWpJOJRltgotm+pmP4+BJlFbPmXyBd4KausMABfE5DReyorDGGBiL3zh5yHRd9yBJ9yIK7UO+DjIRRpO1p6qSwH99cET6UFBbGVykOhhbq2P7sxg2GO3/MXjHhVre4Xvj9BhWIEDk1yz4ZGRStSRG+O2E/rDAKVzjQG2Kn0ZE5qT8Z1CEHZk1urnkn3EX25Bxrko5EN74zXd6kba+ATLdTgfM0HhfH5MEGAWSi8sj5RgObpzU68n8f+BGkUZrUKVUQFg9IYjI+8/lU4VefBCTmHxYnsIZvjE30kpIURdpWkM+yCPj9SO7+fE8CW9qv/khutHhd1dZJsBi
 # Grafana
 
 # Allure
