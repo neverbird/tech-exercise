@@ -11,11 +11,11 @@ applications:
     helm_values:
       - ubiquitous-journey/values-tooling.yaml
   # Test app of app
-  - name: test-app-of-pb
-    enabled: true
-    source_path: "."
-    helm_values:
-      - pet-battle/test/values.yaml
+  #- name: test-app-of-pb
+  #  enabled: true
+  #  source_path: "."
+  #  helm_values:
+  #    - pet-battle/test/values.yaml
   # Staging App of Apps
   - name: staging-app-of-pb
     enabled: true
