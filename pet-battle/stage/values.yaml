@@ -13,23 +13,23 @@ applications:
     source_path: keycloak
     values:
       app_domain: apps.gls.test
-#  pet-battle-api:
-#    name: pet-battle-api
-#    enabled: true
-#    source: https://petbattle.github.io/helm-charts
-#    chart_name: pet-battle-api
-#    source_ref: 1.2.1
-#    values:
-#      image_name: pet-battle-api
-#      image_version: latest
-#      hpa:
-#        enabled: false
-#  pet-battle:
-#    name: pet-battle
-#    enabled: true
-#    source: https://petbattle.github.io/helm-charts
-#    chart_name: pet-battle
-#    source_ref: 1.0.6
-#    values:
-#      image_version: latest
-#      config_map: '{ "catsUrl": "https://pet-battle-api-neverbird-stage.apps.gls.test", "tournamentsUrl": "https://pet-battle-tournament-neverbird-stage.apps.gls.test", "matomoUrl": "https://matomo-neverbird-ci-cd.apps.gls.test/", "keycloak": { "url": "https://keycloak-neverbird-stage.apps.gls.test/auth/", "realm": "pbrealm", "clientId": "pbclient", "redirectUri": "http://localhost:4200/tournament", "enableLogging": true } }'
+  pet-battle-api:
+    name: pet-battle-api
+    enabled: true
+    source: https://petbattle.github.io/helm-charts
+    chart_name: pet-battle-api
+    source_ref: 1.2.1
+    values:
+      image_name: pet-battle-api
+      image_version: latest
+      hpa:
+        enabled: false
+  pet-battle:
+    name: pet-battle
+    enabled: true
+    source: https://petbattle.github.io/helm-charts
+    chart_name: pet-battle
+    source_ref: 1.0.6
+    values:
+      image_version: latest
+      config_map: '{ "catsUrl": "https://pet-battle-api-neverbird-stage.apps.gls.test", "tournamentsUrl": "https://pet-battle-tournament-neverbird-stage.apps.gls.test", "matomoUrl": "https://matomo-neverbird-ci-cd.apps.gls.test/", "keycloak": { "url": "https://keycloak-neverbird-stage.apps.gls.test/auth/", "realm": "pbrealm", "clientId": "pbclient", "redirectUri": "http://localhost:4200/tournament", "enableLogging": true } }'
