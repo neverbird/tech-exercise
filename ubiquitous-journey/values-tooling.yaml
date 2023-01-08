@@ -100,7 +100,17 @@ applications:
             password: AgCWM/8VINcBIwU4pAvIQftPKaaas0tTo7A5yDyjPim3bvxiWs9PQBOJjQ/jFNKffNK0ZQA6+18ojNKyPVGIR7pEganO0/nRuc3cWObImhDu/7WoqXkBYz6eHaKzgqh0kLM8juofNUgIM0dC3/rPpweeqXTlWUD4t9vU1ZVZ2Tu8O0pb9QZ1OTPb56M4GkRx2fuGPrLQPZNAbcqVL6QinBZtYLJ4Nws6tzU5r3Au3gv/YXJnUWG3VuoESKiCGu30+SVgWnjI1hHd4C0How9JcT6j592W6sHO+gACmaW1wdYu33Q8alLXGvVSa1OPKEUsYmVuphYEWNzvrhkl4+6FXWxn/F/caDtEUHt4IKj1Q7jpLllj3kxkOMw5iAVFtV/R74vZcwD6Gg0JSZxFvIz9fxY+gh0jm9o3soEARbQXYmLTKQVkxDX26ZvF3Yg6XgQycZewo/I5a4fIyD+5tMBmsfX9cIL3JyZ+xiNehgRQu+jqm9b3F7U3khcb0pJgCjf3B6cLvD1kEOxUOF2sVPfOCKOhLxDt626ovUCibLcKte5sgPKr6vSi//vJAoieA9UWxBa4NC0p3QJvlDiA4HZ614RDBW9ZwtjWaFiatMGqyBJRVEKpsc5tUwzeLTevoXBY9ELOAdQmZ6FTlb4D6qaot1TZdZgCemSvLMsZNIFpKaG2nOtTW2ZRoZwMEpNLjljxozeBAS8bxJaPAOzxM29vTRr0ozmI4tihtRLWAYKJMke/avoTytOzjyEn
             username: AgCDzDIpRLVd/IxQSdN8vVHJpSP5ElaLJ17w0p9EE6sxywjSE5/HMECTJLk+BNyFkgpwn4UMt90xvHyFhxM/J8jcB9cku+eVIkQRMMl7PmLBhU+eFSQVnUbM6kzlPfDQJR5XjzRqQFBqBwtjHKkTt7Dn3EuI2q3odmKntK/6nwjQXceob6lcHARKV6a/nL4CRqUf1yU1wpvFZPGOxbeLkuDxO09xcHMabvd7fQChJJbZJWOx1BjeGX8+Xze15oOdXL5mrbrHD6XqLdPWrToYMzH7lhKCO1GhWz6DoqNpbaKv080Z+SUpzneKO8J42h6l9dkLLqZsFtKsWrtps6HPfhvXl37WfpwjF/1GTddUQ2M7lt7kjgIg8L2UGblIFt1FSnMyrxC8iUYanyvr9xeO2Ht2oRcF49NTexfBG+IKKgv2GFjpDW98BKXrcCoqjCGYYjRfSARAu4pYEWpUWjikr8WtdVr0jF6Q61JhUjal3QeIZ885yXJS82/EvEg2b1fbNX6a4ic75DPgOgnPxPM1HxYlRYxyF6jYnGDnPRRqDh1QJWKFJNCQO/UXE1X5oO/anwq8mAYNprzSSnA5bd154vz2A2+Edg0NMUZWEQDEQz2dYoVoUns5r1RdgUVwxWWFrOp/Fr3iTorYVAG6jAhco+8gaD4U5qFTcqvGqXKz0glpBb6PegOkKpCYlu/pP/Z9+eex7/+yGgn6Jd8=
 
-#
+# Tekton
+  - name: tekton-pipeline
+    enabled: true
+    source: "https://github.com/neverbird/tech-exercise.git"
+    source_ref: main
+    source_path: tekton
+    values:
+      team: neverbird
+      cluster_domain: apps.gls.test
+      git_server: github.com
+
 # Grafana
 # Allure
 
