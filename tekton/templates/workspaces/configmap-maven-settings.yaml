@@ -20,5 +20,5 @@ data:
           <password>admin123</password>
         </server>
       </servers>
-      <localRepository>/workspace/maven-m2/.m2/repository</localRepository>
+      <localRepository>/home/minamoto/.m2/repository</localRepository>
     </settings>
